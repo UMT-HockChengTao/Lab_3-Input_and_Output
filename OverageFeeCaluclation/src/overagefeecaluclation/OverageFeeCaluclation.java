@@ -20,11 +20,11 @@ public class OverageFeeCaluclation {
         System.out.println("*************************************************");
         
         System.out.print("ENTER THE NUMBER OF EXCESS MINUTES: ");
-        int excessMinutes = Input.nextInt();
+        int excessMinutes = Input.nextInt(); //get input of in the datatype of integer
         
-        double overageFee = 0.35 * excessMinutes;
+        double overageFee = 0.35 * excessMinutes; //Calculation of overage fee
         
-        System.out.printf("OVERAGE FEE = RM %.2f \n", overageFee);
+        System.out.printf("OVERAGE FEE = RM %.2f \n", overageFee); //Display overage fee
         
     }
     
