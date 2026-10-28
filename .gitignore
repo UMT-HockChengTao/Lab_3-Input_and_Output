@@ -1,8 +1,11 @@
 /activity1Grosspay/nbproject/private/
 /activity1Grosspay/build/
+<<<<<<< HEAD
 /OverageFeeCaluclation/nbproject/private/
 /OverageFeeCaluclation/build/
 /TemperatureConversion/nbproject/private/
 /TemperatureConversion/build/
 *.rap
 /savingForecast/nbproject/private/
+=======
+>>>>>>> parent of 66a37ef (Prompt Input Using JOPtionPane)
