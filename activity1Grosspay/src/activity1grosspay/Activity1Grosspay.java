@@ -9,21 +9,22 @@ package activity1grosspay;
  *************************************************/
 
 import java.util.*; 
+import javax.swing.JOptionPane;
 
 public class Activity1Grosspay {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in); //create scanner to read users' input
+        //Show prompt dialog using JOtionPane
+        String hoursWorkedInput = JOptionPane.showInputDialog("Enter the number of hours worked: ");
+        double hoursWorked = Double.parseDouble(hoursWorkedInput); //Convert input into double datatype
         
-        System.out.print("Enter the number of hours worked: ");
-        double hoursWorked = scanner.nextDouble(); //Prompt user to input hours worked
-        
-        System.out.print("Enter the hourly pay rate: ");
-        double hourlyRate = scanner.nextDouble(); //Prompt user to input hourly rate
+        String hoursRateInput = JOptionPane.showInputDialog("Enter the hourly pay rate: ");
+        double hourlyRate = Double.parseDouble(hoursRateInput); //Convert input into double datatype
         
         double grossPay = hoursWorked * hourlyRate; //Calculate gross pay
         
-        System.out.printf("The total gross pay is: RM %.2f \n" , grossPay); //Display gross pay
+        String message = String.format("The total gross pay is: RM %.2f \n", grossPay);
+        JOptionPane.showMessageDialog(null, message); //Display gross pay
         
     }
     
